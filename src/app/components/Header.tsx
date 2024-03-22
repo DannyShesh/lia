@@ -15,11 +15,15 @@ export default function Example() {
   return (
     <header className="bg-transparent absolute top-0 w-full">
       <nav className="flex items-center justify-between  p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 items-center gap-10">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            <img className="h-32 w-32 rounded-full " src="/logo.jpg" alt="" />
+
+            
           </a>
+        <h1 className='text-3xl text-slate-50 textshadow '>Ronnies El-service</h1>
+
         </div>
         <div className="flex lg:hidden">
           <button
@@ -33,7 +37,7 @@ export default function Example() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-md textshadow font-semibold leading-6 text-slate-50">
+            <a key={item.name} href={item.href} className="text-2xl textshadow font-semibold leading-6 text-slate-50">
               {item.name}
             </a>
           ))}

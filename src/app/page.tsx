@@ -10,8 +10,9 @@ export default function Home() {
     <div className="w-full min-h-screen" >
       <Header></Header>
       <Hero></Hero>
-      <Gallery></Gallery>
       <Info></Info>
+      <Gallery></Gallery>
+      
       <Footer></Footer>
     </div>
   );

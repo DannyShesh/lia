@@ -10,16 +10,28 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 
 const steps = [
   {
-    label: '',
+    label: 'aaaaaaa',
     image: '/info.jpg',
   },
   {
-    label: '',
-    image: '/info.jpg',
+    label: 'bbbb',
+    image: '/2.jpg',
   },
   {
-    label: '',
-    image: '/info.jpg',
+    label: 'cccc',
+    image: '/3.jpg',
+  },
+  {
+    label: 'cccc',
+    image: '/4.jpg',
+  },
+  {
+    label: 'cccc',
+    image: '/5.jpg',
+  },
+  {
+    label: 'cccc',
+    image: '/webb.jpg',
   },
 ];
 
@@ -37,15 +49,17 @@ export default function TextMobileStepper() {
   };
 
   return (
+    <div className='w-full h-screen '>
     <Box
       sx={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center', // Center horizontally
-        height: '70vh', // Adjust the height as desired
+        height: '100%', // Adjust the height as desired
+        width: "100%"
       }}
     >
-      <Box sx={{ maxWidth: 1000, flexGrow: 1 }}> {/* Adjust maxWidth as desired */}
+      <Box sx={{ maxWidth: "80%",  flexGrow: 1 }}> {/* Adjust maxWidth as desired */}
         <Paper
           square
           elevation={0}
@@ -59,7 +73,7 @@ export default function TextMobileStepper() {
         >
           <Typography>{steps[activeStep].label}</Typography>
         </Paper>
-        <Box sx={{ height: 400, maxWidth: 1200, width: '100%', p: 2 }}> {/* Adjust height and maxWidth as desired */}
+        <Box sx={{ height: "80vh" ,  width: '100%', p: 2 }}> {/* Adjust height and maxWidth as desired */}
           <img src={steps[activeStep].image} alt={steps[activeStep].label} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </Box>
         <MobileStepper
@@ -98,5 +112,6 @@ export default function TextMobileStepper() {
         />
       </Box>
     </Box>
+    </div>
   );
 }
