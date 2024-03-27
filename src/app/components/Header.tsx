@@ -13,16 +13,16 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-transparent absolute top-0 w-full">
-      <nav className="flex items-center justify-between  p-6 lg:px-8" aria-label="Global">
+    <header className="bg-transparent flex justify-between items-center top-0 w-full">
+      <nav className="flex items-center text-slate-950 w-full justify-between  p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1 items-center gap-10">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-32 w-32 rounded-full " src="/logo.jpg" alt="" />
+            <img className="h-24 w-24 rounded-full " src="/logo.jpg" alt="" />
 
             
           </a>
-        <h1 className='text-3xl text-slate-50 textshadow '>Ronnies El-service</h1>
+        <h1 className='text-3xl text-slate-950  '>Ronnies El-service</h1>
 
         </div>
         <div className="flex lg:hidden">
@@ -37,7 +37,7 @@ export default function Example() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-2xl textshadow font-semibold leading-6 text-slate-50">
+            <a key={item.name} href={item.href} className="text-2xl  font-semibold leading-6 text-slate-950">
               {item.name}
             </a>
           ))}

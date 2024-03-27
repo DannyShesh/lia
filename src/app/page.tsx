@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Info from "./components/Info"
 import Footer from "./components/Footer"
 import Gallery from "./components/Gallery"
+import Carousel from "./components/Carousel"
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Header></Header>
       <Hero></Hero>
       <Info></Info>
-      <Gallery></Gallery>
+      <Carousel></Carousel>
       
       <Footer></Footer>
     </div>
