@@ -4,8 +4,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Startsida', href: '#' },
-  { name: 'Om Mig', href: '#' },
   { name: 'Kontakt', href: '#Footer' },
+  { name: "Tel -050 560 3033" }
   
 ]
 
@@ -13,7 +13,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-transparent flex justify-between items-center top-0 w-full">
+    <header className="bgmain flex justify-between items-center top-0 w-full">
       <nav className="flex items-center text-slate-950 w-full justify-between  p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1 items-center gap-10">
           <a href="#" className="-m-1.5 p-1.5">
@@ -22,7 +22,7 @@ export default function Example() {
 
             
           </a>
-        <h1 className='text-3xl text-slate-950  '>Ronnies El-service</h1>
+        <h1 className='text-3xl text-slate-50  '>Ronnies El-service</h1>
 
         </div>
         <div className="flex lg:hidden">
@@ -35,9 +35,9 @@ export default function Example() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex  lg:gap-x-12  ">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-2xl  font-semibold leading-6 text-slate-950">
+            <a key={item.name} href={item.href} className="text-2xl  font-semibold leading-6 text-slate-50">
               {item.name}
             </a>
           ))}
@@ -74,7 +74,7 @@ export default function Example() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-50 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
@@ -83,7 +83,7 @@ export default function Example() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-slate-50 hover:bg-gray-50"
                 >
                   Log in
                 </a>

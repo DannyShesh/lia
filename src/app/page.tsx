@@ -12,8 +12,6 @@ export default function Home() {
       <Header></Header>
       <Hero></Hero>
       <Info></Info>
-      <Carousel></Carousel>
-      
       <Footer></Footer>
     </div>
   );

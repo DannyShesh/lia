@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 html {
     scroll-behavior: smooth;
@@ -8,4 +9,9 @@ html {
 
 .textshadow{
     text-shadow: 2px 2px 4px #000000;
+}
+
+
+.bgmain{
+    background-color: #23415c;
 }
