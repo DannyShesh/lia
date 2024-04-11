@@ -15,8 +15,18 @@ const product: Product = {
   images: [
     {
       id: 1,
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg',
-      alt: 'Angled front view with bag zipped and handles upright.',
+      src: '/info.jpg',
+      alt: 'lampa',
+    },
+    {
+      id: 2,
+      src: '/2.jpg',
+      alt: 'Hus',
+    },
+    {
+      id: 3,
+      src: '/4.jpg',
+      alt: 'el',
     },
     // More images...
   ]
@@ -26,18 +36,18 @@ export default function ImageGallery() {
   const [selectedImage, setSelectedImage] = useState(product.images[0]);
 
   return (
-    <div className="flex flex-col lg:flex-row">
-      <div className="w-full lg:w-1/3">
+    <div className="flex w-1/2 flex-col">
+      <div className="w-auto p-16">
         {/* Display selected image */}
-        <div className="lg:hidden mb-4">
-          <img src={selectedImage.src} alt={selectedImage.alt} className="mx-auto max-w-sm" />
+        <div className="lg:hidden mb-4 ">
+          <img src={selectedImage.src} alt={selectedImage.alt} className="w-full h-64 object-cover " />
         </div>
-        <div className="hidden lg:block mb-4">
-          <img src={selectedImage.src} alt={selectedImage.alt} className="mx-auto max-w-md" />
+        <div className="hidden lg:block mb-4 ">
+          <img src={selectedImage.src} alt={selectedImage.alt} className="w-full h-96 object-cover shadow-xl rounded-md" />
         </div>
 
-        <Tab.Group as="div" className="mx-auto max-w-md lg:max-w-full">
-          <div className="mx-auto mt-6 hidden w-full max-w-md sm:block lg:max-w-full">
+        <Tab.Group as="div" className="mx-auto max-w-xl lg:max-w-full">
+          <div className="mx-auto mt-6 hidden w-full max-w-xl sm:block lg:max-w-full">
             <Tab.List className="grid grid-cols-4 gap-6">
               {product.images.map((image) => (
                 <Tab
@@ -49,6 +59,7 @@ export default function ImageGallery() {
                     <>
                       <span className="sr-only">{image.alt}</span>
                       <span className="absolute inset-0 overflow-hidden rounded-md">
+                        {/* Thumbnail images also set to cover within their container */}
                         <img src={image.src} alt={image.alt} className="h-full w-full object-cover object-center" />
                       </span>
                       <span

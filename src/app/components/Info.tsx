@@ -4,11 +4,8 @@ import Random from "./Random"
 export default function Example() {
   return (
     <div className="relative bg-white mx-auto max-h-screen">
-      <div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
-        <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute m-auto xl:inset-y-0 xl:right-1/2 xl:w-1/2">
+      <div className="m-auto flex items-center justify-center gap-20 max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
           <Random></Random>
-          
-        </div>
         <div className="px-6 lg:contents">
           <div className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
             <p className="text-base font-semibold leading-7 text-indigo-600">Information</p>
