@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
   { name: 'Startsida', href: '#' },
   { name: 'Kontakt', href: '#Footer' },
-  { name: "Tel -050 560 3033" }
+  
   
 ]
 
@@ -43,7 +43,8 @@ export default function Example() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          
+          <p className='text-2xl  font-semibold leading-6 text-slate-50'>Tel -050 560 3033
+</p>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

@@ -5,6 +5,8 @@ import Info from "./components/Info"
 import Footer from "./components/Footer"
 import Gallery from "./components/Gallery"
 import Carousel from "./components/Carousel"
+import Random from "./components/Random"
+
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
       <Hero></Hero>
       <Info></Info>
       <Footer></Footer>
+      <Random></Random>
     </div>
   );
 }
