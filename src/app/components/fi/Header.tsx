@@ -1,12 +1,10 @@
-"use client"
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Startsida', href: '/' },
-  { name: 'Kontakt', href: '#Footer' },
-  { name: "Ota yhteyttä", href: "/?lang=fi"}
+  { name: 'Etusivo', href: '#' },
+  { name: 'Ota yhteyttä', href: '#Footer' },
   
   
 ]
@@ -44,15 +42,8 @@ export default function Example() {
             </a>
           ))}
         </div>
-        
-          <svg className='w-4 h-4' xmlns="http://www.w3.org/2000/svg" id="flag-icons-fi" viewBox="0 0 640 480">
-  <path fill="#fff" d="M0 0h640v480H0z"/>
-  <path fill="#002f6c" d="M0 174.5h640v131H0z"/>
-  <path fill="#002f6c" d="M175.5 0h130.9v480h-131z"/>
-</svg>
-          
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <p className='text-2xl  font-semibold leading-6 text-slate-50'>Tel 050 560 3033
+          <p className='text-2xl  font-semibold leading-6 text-slate-50'>Tel -050 560 3033
 </p>
         </div>
       </nav>

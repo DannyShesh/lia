@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "~react-image-gallery/styles/css/image-gallery.css";
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 html {
     scroll-behavior: smooth;
