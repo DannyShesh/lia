@@ -4,9 +4,8 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Startsida', href: '/' },
-  { name: 'Kontakt', href: '#Footer' },
-  { name: "Ota yhteyttä", href: "/?lang=fi"}
+  { name: 'Kontakt', href: '/#Footer' },
+  { name: "Ota yhteyttä", href: "/?lang=fi#Footer"}
   
   
 ]

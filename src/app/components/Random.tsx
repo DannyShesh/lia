@@ -16,17 +16,17 @@ const product: Product = {
   images: [
     {
       id: 1,
-      src: '/info.jpg',
+      src: '/info.webp',
       alt: 'lampa',
     },
     {
       id: 2,
-      src: '/2.jpg',
+      src: '/2.webp',
       alt: 'Hus',
     },
     {
       id: 3,
-      src: '/4.jpg',
+      src: '/4.webp',
       alt: 'el',
     },
     // More images...
